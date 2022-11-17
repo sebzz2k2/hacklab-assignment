@@ -1,0 +1,77 @@
+{
+  "users": [
+    {
+      "username": "abc",
+      "location": {
+        "latitude": 13.0667968,
+        "longitude": 77.6383436
+      }
+    },
+    {
+      "username": "xyz",
+      "location": {
+        "latitude": 13.0667968,
+        "longitude": 77.6383436
+      }
+    },
+    {
+      "username": "ran",
+      "location": {
+        "lattitude": "1111",
+        "longitude": "1221"
+      }
+    },
+    {
+      "username": "ranhere",
+      "location": {
+        "lattitude": "11111",
+        "longitude": "12211"
+      }
+    },
+    {
+      "username": "ranhere",
+      "location": {
+        "lattitude": "11111",
+        "longitude": "12211"
+      }
+    },
+    {
+      "username": "ra",
+      "location": {
+        "lattitude": "11",
+        "longitude": "121"
+      }
+    },
+    {
+      "location": {}
+    },
+    {
+      "username": "heylo",
+      "location": {
+        "lattitude": 13.0668323,
+        "longitude": 77.6382925
+      }
+    },
+    {
+      "username": "heylo",
+      "location": {
+        "lattitude": 13.0669088,
+        "longitude": 77.6381875
+      }
+    },
+    {
+      "username": "heylom",
+      "location": {
+        "lattitude": 13.0669088,
+        "longitude": 77.6381875
+      }
+    },
+    {
+      "username": "heylomq",
+      "location": {
+        "lattitude": 13.0669088,
+        "longitude": 77.6381875
+      }
+    }
+  ]
+}
