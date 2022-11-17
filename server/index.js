@@ -22,20 +22,24 @@ app.get("/", (req, res) => {
 //! post route
 app.post("/", (req, res) => {
   const { username, lattitude, longitude } = req.body;
-  const newUser = {
-    username,
-    location: {
-      lattitude,
-      longitude,
-    },
-  };
-  // ! add new user to the users array
-  usersData.users.push(newUser);
-  // ! write the new data to the json file
-  fs.writeFileSync("user.json", JSON.stringify(usersData, null, 2), (err) => {
-    if (err) throw err;
-  });
-  res.json({ status: "ok" });
+  if (!username || !lattitude || !longitude) {
+    res.json({ status: "error", error: "Invalid data" });
+  } else {
+    const newUser = {
+      username,
+      location: {
+        lattitude,
+        longitude,
+      },
+    };
+    // ! add new user to the users array
+    usersData.users.push(newUser);
+    // ! write the new data to the json file
+    fs.writeFileSync("user.json", JSON.stringify(usersData, null, 2), (err) => {
+      if (err) throw err;
+    });
+    res.json({ status: "ok" });
+  }
 });
 
 //! to access the port number from the environment variable
